@@ -1,0 +1,14 @@
+spring:
+  application.name: SpringCampR2dbcExample
+  r2dbc:
+    name: admin
+    username: scott
+    password: tiger
+    url: r2dbc:mysql://localhost:3306/spring?allowPublicKeyRetrieval=true&useUnicode=true&serverTimezone=UTC
+    pool:
+      enabled: true
+      initial-size: 10
+      max-size: 20
+logging:
+  level:
+      org.springframework.data.repository: debug
